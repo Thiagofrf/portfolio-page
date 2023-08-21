@@ -196,11 +196,13 @@ body {
 
 .projects-resume {
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-content: flex-start;
 }
 
 .projects-resume .project-resume {
-    width: 100%;
+    width: 48%;
     background: var(--bg-cards);
     height: auto;
     border-radius: var(--standard-radius);
