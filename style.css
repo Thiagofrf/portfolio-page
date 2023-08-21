@@ -171,12 +171,9 @@ body {
     width: 75%;
 }
 
-.main-info>div {
-    background: var(--bg-cards);
-}
-
 .my-projects,
 .recent-posts {
+    background: var(--bg-cards);
     width: 100%;
     height: 86px;
     border-radius: var(--standard-radius);
@@ -190,8 +187,6 @@ body {
     font-weight: 700;
 }
 
-.my-projects {}
-
 .my-projects a {
     color: #837E9F;
     text-decoration: none;
@@ -200,17 +195,108 @@ body {
 }
 
 .projects-resume {
-    height: 186px;
+    display: flex;
+    gap: 30px;
+}
+
+.projects-resume .project-resume {
+    width: 100%;
+    background: var(--bg-cards);
+    height: auto;
+    border-radius: var(--standard-radius);
+    box-shadow: var(--standard-shadow);
+    padding: 30px;
+    color: #837E9F;
+    position: relative;
+}
+
+.projects-resume .project-resume .project-resume-title {
+    font-weight: 700;
+    text-transform: lowercase;
+    display: flex;
+    align-items: center;
+} 
+
+.projects-resume .project-resume .project-resume-title ion-icon {
+    margin-right: 16px;
+}
+
+.projects-resume .project-resume .project-resume-description {
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+.projects-resume .project-resume .project-resume-footer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.projects-resume .project-resume .project-resume-footer .project-resume-language, .projects-resume .project-resume .project-resume-footer .project-resume-stars, .projects-resume .project-resume .project-resume-footer .project-resume-pr {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.projects-resume .project-resume .project-resume-footer .project-resume-language ion-icon, .projects-resume .project-resume .project-resume-footer .project-resume-stars ion-icon, .projects-resume .project-resume .project-resume-footer .project-resume-pr ion-icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.projects-resume .project-resume .project-resume-footer .project-resume-language {
+    position: absolute;
+    right: 32px;
+}
+
+.posts-resume {
+    height: auto;
+    background: var(--bg-cards);
     border-radius: var(--standard-radius);
     box-shadow: var(--standard-shadow);
 }
 
-.recent-posts {}
+.posts-resume .post-resume {
+    display: flex;
+    padding: 31px 30px 42px;
+    color: #837E9F;
+}
 
-.posts-resume {
-    height: 201px;
-    border-radius: var(--standard-radius);
-    box-shadow: var(--standard-shadow);
+.posts-resume .post-resume .post-resume-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts-resume .post-resume .post-resume-avatar img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.posts-resume .post-resume .post-resume-content .post-resume-title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.posts-resume .post-resume .post-resume-content .post-resume-date {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.posts-resume .post-resume .post-resume-content .post-resume-description {
+    font-weight: 400;
+    margin-top: 28px;
+}
+
+.posts-resume .post-resume .post-resume-content .post-resume-hashtags {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-size: 14px;
 }
 
 footer {
