@@ -31,39 +31,137 @@ body {
     width: 25%;
 }
 
-.side-info > div {
+.side-info>div {
     background: var(--bg-cards);
     width: 100%;
 }
 
 .profile {
-    height: 292px;
+    height: auto;
     border-radius: var(--standard-radius);
     box-shadow: var(--standard-shadow);
+    padding: 32px;
+}
+
+.profile .avatar {
+    text-align: center;
+}
+
+.profile .avatar img {
+    width: 128px;
+    border: 2px solid #0F0;
+    border-radius: 50%;
+}
+
+.profile .full-name {
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    color: #837E9F;
+    font-weight: 700;
+}
+
+.profile .occupation {
+    text-align: center;
+    font-size: 13px;
+    color: #837E9F;
+    font-weight: 300;
 }
 
 .general-info {
-    height: 348px;
+    height: auto;
     border-radius: var(--standard-radius);
     box-shadow: var(--standard-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 40px;
+    font-size: 13px;
+    color: #837E9F;
+}
+
+.general-info p {
+    display: flex;
+    align-items: center;
+}
+
+.general-info p ion-icon {
+    font-size: 24px;
+    margin-right: 15px;
 }
 
 .tech-skills {
-    height: 208px;
+    height: auto;
     border-radius: var(--standard-radius);
     box-shadow: var(--standard-shadow);
+    padding: 30px 20px;
 }
 
-.work-experiences {
-    height: 349px;
-    border-radius: var(--standard-radius);
-    box-shadow: var(--standard-shadow);
+.tech-skills>p {
+    font-size: 20px;
+    color: #837E9F;
+    font-weight: 700;
 }
 
-.education {
-    height: 352px;
+.tech-skills .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.tech-skills .skill-list .tech-skill {
+    width: 30%;
+    padding: 7px;
+    background: #CB92B1;
+    border-radius: 5px;
+}
+
+.work-experiences, .education {
+    height: auto;
     border-radius: var(--standard-radius);
     box-shadow: var(--standard-shadow);
+    padding: 30px 20px;
+}
+
+.work-experiences .work-experiences-title, .education .education-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #837E9F;
+}
+
+.work-experiences .work-experiences-list, .education .education-list {
+    padding: 20px 20px 0;
+    list-style-position: inside;
+    color: #837E9F;
+}
+
+.work-experiences .work-experiences-list .work-experience, .education .education-list .school {
+    margin-bottom: 20px;
+}
+
+.work-experiences .work-experiences-list .work-experience .work-experience-main, .education .education-list .school .school-main {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.work-experiences .work-experiences-list .work-experience .work-experience-date, .education .education-list .school .school-date {
+    margin-left: 22px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.work-experiences .work-experiences-list .work-experience .work-experience-description, .education .education-list .school .school-description {
+    margin-left: 22px;
+    font-weight: 500;
+    font-size: 12px;
 }
 
 .main-info {
@@ -73,18 +171,33 @@ body {
     width: 75%;
 }
 
-.main-info > div {
+.main-info>div {
     background: var(--bg-cards);
 }
 
-.my-projects, .recent-posts {
+.my-projects,
+.recent-posts {
     width: 100%;
     height: 86px;
     border-radius: var(--standard-radius);
     box-shadow: var(--standard-shadow);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #837E9F;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .my-projects {}
+
+.my-projects a {
+    color: #837E9F;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 .projects-resume {
     height: 186px;
