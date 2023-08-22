@@ -308,6 +308,10 @@ footer {
     color: #837E9F;
 }
 
+.project-resume, .post-resume {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
     .container { 
         flex-direction: column;
