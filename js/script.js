@@ -1,10 +1,5 @@
-import {
-    Octokit
-} from 'https://esm.sh/@octokit/core';
-
-import config from './config.js';
-
-const myToken = config.MY_API_TOKEN;
+import { Octokit } from 'https://esm.sh/@octokit/core';
+import myToken from './config.js';
 
 const octokit = new Octokit({
     auth: myToken

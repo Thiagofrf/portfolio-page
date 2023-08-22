@@ -10,6 +10,16 @@
 
 <br>
 
+## Preview
+
+![Alt text](assets/preview.png)
+
+## Layout
+
+You can check the layout and compare with my project here: 
+
+https://www.figma.com/file/yJcR419O5BDsStWNKGKe1L/Portfolio-%E2%80%A2-Desafio-Discover-(Copy)?node-id=0%3A1&mode=dev
+
 ## Technologies
 
 This project was developed using the following technologies: 
@@ -17,6 +27,7 @@ This project was developed using the following technologies:
 - HTML
 - CSS
 - JS
+- GitHub Pages
 
 ## Project
 
@@ -24,7 +35,7 @@ Portfolio page using HTML, CSS and Javascript to consume GitHub API and display 
 
 ## See Project
 
-Install the project locally and open the index.html file on the browser
+See project on this link - deployed using GitHub Pages: https://thiagofrf.github.io/portfolio-page/
 
 ---
 
