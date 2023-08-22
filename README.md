@@ -35,7 +35,7 @@ Portfolio page using HTML, CSS and Javascript to consume GitHub API and display 
 
 ## See Project
 
-See project on this link - deployed using GitHub Pages: https://thiagofrf.github.io/portfolio-page/
+See project on this link - deployed using Netlify: [https://thiagofrf.github.io/portfolio-page/](https://thiagofontanella-portfolio.netlify.app/)
 
 ---
 
