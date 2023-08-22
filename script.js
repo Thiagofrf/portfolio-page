@@ -2,15 +2,16 @@ import {
     Octokit
 } from 'https://esm.sh/@octokit/core';
 
-const myToken = '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'
+import config from './config.js';
+
+const myToken = config.MY_API_TOKEN;
 
 const octokit = new Octokit({
     auth: myToken
 })
 
 const headers = {
-    'X-GitHub-Api-Version': '2022-11-28',
-    'Authorization': `Bearer ${myToken}`
+    'X-GitHub-Api-Version': '2022-11-28'
 };
 
 await octokit.request("GET /user/repos", {
