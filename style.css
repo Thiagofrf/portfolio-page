@@ -57,14 +57,14 @@ body {
     text-align: center;
     margin-top: 26px;
     margin-bottom: 10px;
-    font-size: 23px;
+    font-size: 1.4375rem;
     color: #837E9F;
     font-weight: 700;
 }
 
 .profile .occupation {
     text-align: center;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #837E9F;
     font-weight: 300;
 }
@@ -77,7 +77,7 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 30px 40px;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #837E9F;
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 .general-info p ion-icon {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-right: 15px;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 .tech-skills>p {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #837E9F;
     font-weight: 700;
 }
@@ -112,7 +112,7 @@ body {
     margin-top: 10px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 700;
 }
 
@@ -131,7 +131,7 @@ body {
 }
 
 .work-experiences .work-experiences-title, .education .education-title {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #837E9F;
 }
@@ -149,19 +149,19 @@ body {
 .work-experiences .work-experiences-list .work-experience .work-experience-main, .education .education-list .school .school-main {
     display: inline-block;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .work-experiences .work-experiences-list .work-experience .work-experience-date, .education .education-list .school .school-date {
     margin-left: 22px;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .work-experiences .work-experiences-list .work-experience .work-experience-description, .education .education-list .school .school-description {
     margin-left: 22px;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .main-info {
@@ -183,14 +183,14 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #837E9F;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 
 .my-projects a {
     color: #837E9F;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
 }
 
@@ -225,7 +225,7 @@ body {
 
 .projects-resume .project-resume .project-resume-description {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: 22px;
 }
 
@@ -237,14 +237,14 @@ body {
 }
 
 .projects-resume .project-resume .project-resume-footer .project-resume-language, .projects-resume .project-resume .project-resume-footer .project-resume-stars, .projects-resume .project-resume .project-resume-footer .project-resume-pr {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     display: flex;
     align-items: center;
 }
 
 .projects-resume .project-resume .project-resume-footer .project-resume-language ion-icon, .projects-resume .project-resume .project-resume-footer .project-resume-stars ion-icon, .projects-resume .project-resume .project-resume-footer .project-resume-pr ion-icon {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-right: 8px;
 }
 
@@ -280,12 +280,12 @@ body {
 }
 
 .posts-resume .post-resume .post-resume-content .post-resume-title {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
 }
 
 .posts-resume .post-resume .post-resume-content .post-resume-date {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
 }
 
@@ -298,12 +298,115 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 12px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 footer {
     text-align: center;
     padding: 20px 20px 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #837E9F;
+}
+
+@media screen and (max-width: 768px) {
+    .container { 
+        flex-direction: column;
+    }
+
+    .side-info {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .general-info {
+        font-size: 0.6rem;
+        padding: 30px 20px;  
+    }
+
+    .general-info p ion-icon {
+        font-size: 1rem;
+    }
+
+    .tech-skills .skill-list .tech-skill {
+        width: fit-content;
+    }
+
+    .main-info {
+        gap: 31px;
+        width: 100%;
+    }
+
+    .projects-resume {
+        gap: 16px;
+    }
+
+    .projects-resume .project-resume {
+        width: 100%;
+    }
+    
+    .posts-resume .post-resume .post-resume-avatar {
+        align-items: flex-start;
+    }
+    
+    .posts-resume .post-resume .post-resume-avatar img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    
+    .posts-resume .post-resume .post-resume-content .post-resume-title {
+        font-size: 0.825rem;
+        max-width: 100%;
+    }
+    
+    .posts-resume .post-resume .post-resume-content .post-resume-date {
+        font-size: 0.65rem;
+        max-width: 100%;
+    }
+    
+    .posts-resume .post-resume .post-resume-content .post-resume-description {
+        font-size: 0.7rem;
+        margin-top: 30px;
+        margin-left: -35%;
+        max-width: 100%;
+    }
+    
+    .posts-resume .post-resume .post-resume-content .post-resume-hashtags {
+        font-size: 0.6rem;
+        margin-left: -35%;
+    }
+
+}
+
+@media (max-width: 321px) {
+    .posts-resume .post-resume {
+        flex-direction: column;
+    }
+
+    .posts-resume .post-resume .post-resume-avatar img {
+        margin-right: 0;
+    }
+
+    .posts-resume .post-resume .post-resume-content .post-resume-title {
+        font-size: 0.6rem;
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .posts-resume .post-resume .post-resume-content .post-resume-date {
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    .posts-resume .post-resume .post-resume-content .post-resume-description {
+        margin-left: 0;
+        font-size: 0.5rem;
+    }
+
+    .posts-resume .post-resume .post-resume-content .post-resume-hashtags {
+        margin-left: 0;
+        font-size: 0.5rem;
+    }
+    
 }
